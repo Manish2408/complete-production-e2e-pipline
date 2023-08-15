@@ -15,7 +15,7 @@ pipeline{
         }
      }
     
-        stage("Checkout from SCM"){
+        stages("Checkout from SCM"){
             steps {
                 git branch: 'main', credentialsId: 'github', url: 'https://github.com/Manish2408/complete-production-e2e-pipline.git'
             }
